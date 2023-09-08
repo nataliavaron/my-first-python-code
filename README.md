@@ -67,10 +67,6 @@ for gene in genes_comunes:
     for gene in genes_comunes:
         print(gene)
 
-    # Restaurar la salida estándar
-    sys.stdout.close()
-    sys.stdout = sys.__stdout__
-
     print(f"Genes comunes guardados en {archivo_salida}")
 
 pass
@@ -87,9 +83,6 @@ print("Genes diferentes en Streptococcus pneumoniae")
 for gene in genes_diferentes_spneumoniae:
     print(gene)
 
-# Restaurar la salida estándar
-sys.stdout.close()
-sys.stdout = sys.__stdout__
 
 print(f"Genes diferentes en Streptococcus pneumoniae guardados en {archivo_genes_diferentes_spneumoniae}")
 
@@ -107,8 +100,7 @@ print("Genes diferentes en Streptococcus mitis")
 for gene in genes_diferentes_smitis:
     print(gene)
 
-# Restaurar la salida estándar
-sys.stdout.close()
-sys.stdout = sys.__stdout__
-
 print(f"Genes diferentes en Streptococcus mitis guardados en {archivo_genes_diferentes_smitis}")
+
+pass
+
